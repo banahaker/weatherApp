@@ -1,5 +1,6 @@
 let getCityName = document.getElementById('getCityName');
 let locationBtn = document.getElementById('locationBtn');
+let getCityNameBtn = document.getElementById('getCityNameBtn');
 
 const sendRequest = () => {
 	return new Promise((resolve, reject) => {
@@ -96,10 +97,16 @@ async function getWeatherDetailByLocal(city) {
 	}
 }
 
+getCityNameBtn.addEventListener('click', () => {
+	if (getCityName.value != "") {
+		getWeatherDetail();
+	}
+});
+
 
 getCityName.addEventListener('keydown', (e) => {
 	if (e.keyCode == '13' && getCityName.value != "") {
-		getWeatherDetail()
+		getWeatherDetail();
 	}
 });
 
@@ -116,7 +123,7 @@ function onSuccess(position) {
 			let allDetails = response.results[0].components;
 			let { city } = allDetails;
 			getWeatherDetailByLocal(city);
-	});
+		});
 }
 
 function onError() {
