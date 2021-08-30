@@ -89,12 +89,16 @@ body {
     #getCityName:focus {
         border: 2px solid var(--bgBlue);
     }
+
+    #getCityName:focus ~ button {
+        background-color: var(--bgBlue);
+    }
     
     .input button {
         display: inline;
         height: 45px;
         width: 20%;
-        background-color: var(--bgBlue);
+        background-color: var(--gray);
         border: none;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -102,6 +106,7 @@ body {
         font-size: 20px;
         position: relative;
         left: -5px;
+        transition: .3s ease-in-out;
     }
 }
 
