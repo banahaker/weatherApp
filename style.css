@@ -182,3 +182,34 @@ body {
     font-size: 15px;
     font-weight: 700;
 }
+
+@media screen and (max-width:750px) {
+    .setting {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:670px) {
+    .setting {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    body {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .setting {
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:640px) {
+    .setting {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+}
