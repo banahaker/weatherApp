@@ -94,7 +94,8 @@ async function getWeatherDetailByLocal(city) {
 				</div>
 			`
 	} catch (message) {
-		console.log(`Error: ${message}`)
+		let resultHTML = document.getElementById('result');
+		resultHTML.innerHTML = `<h1>please check city name</h1>`;
 	}
 }
 
