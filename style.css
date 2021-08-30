@@ -27,6 +27,7 @@ body {
     background-color: #fff;
     border: none;
     border-radius: 13px;
+    -webkit-border-radius: 13px;
     margin-right: 80px;
     display: flex;
     justify-content: center;
@@ -53,6 +54,7 @@ body {
     font-size: 20px;
     border: 2px solid var(--gray);
     border-radius: 4px;
+    -webkit-border-radius: 4px;
     outline: none;
     margin-bottom: 50px;
     transition: .3s ease-in-out;
@@ -79,7 +81,8 @@ body {
         height: 45px;
         text-align: left;
         font-size: 18px;
-        padding-inline-start: 5px;
+        -webkit-padding-start: 5px;
+                padding-inline-start: 5px;
         border: 2px solid var(--gray);
         border-radius: 4px;
         outline: none;
