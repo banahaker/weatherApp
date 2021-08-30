@@ -63,6 +63,7 @@ body {
 }
 
 .input button {
+    background-color: var(--gray);
     display: none;
 }
 
