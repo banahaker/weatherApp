@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bgBlue: #00C2FF;
+    --gray: #AEAEAE;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bgBlue);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.setting {
+    width: 320px;
+    height: 500px;
+    background-color: #fff;
+    border: none;
+    border-radius: 13px;
+    margin-right: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.setting h1 {
+    color: var(--bgBlue);
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.setting input[type="text"] {
+    width: 70%;
+    height: 45px;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid var(--gray);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 50px;
+    transition: .3s ease-in-out;
+}
+
+#getCityName:focus {
+    border: 2px solid var(--bgBlue);
+}
+
+.setting hr {
+    width: 80%;
+    background-color: var(--gray);
+    margin-bottom: 50px;
+}
+
+.setting input[type="button"] {
+    width: 70%;
+    height: 45px;
+    background-color: var(--bgBlue);
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    border: 2px solid var(--bgBlue);
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+
+.result {
+    width: 320px;
+    height: 500px;
+    padding: 30px 0px 0 0px;
+    background-color: #fff;
+    border: none;
+    border-radius: 13px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.result>h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--bgBlue);
+    position: relative;
+    top: 40%;
+}
+
+.result img {
+    width: 60%;
+    margin: 0;
+}
+
+.result .firstInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 75%;
+}
+
+.result .firstInfo h1, 
+.result .firstInfo h2,
+.result .firstInfo h3 {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.result .firstInfo h1 {
+    font-size: 100px;
+    font-weight: 300;
+}
+
+.result .firstInfo h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.result .firstInfo h3 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.result .secInfo {
+    position: relative;
+    bottom: -50px;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    border-top: var(--gray) solid 1px;
+}
+
+.result .secInfo svg {
+    width: 38px;
+    position: relative;
+    bottom: 10px;
+}
+
+.result .secInfo .feelTemp {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    border-right: var(--gray) solid 1px;
+    padding-top: 6px;
+    position: relative;
+    left: 10px;
+}
+
+.result .secInfo .Visibility {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    padding-top: 6px;
+    position: relative;
+    left: 20px;
+}
+
+.result .secInfo .info {
+    margin-left: 5px;
+}
+
+.result .secInfo .info h1 {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.result .secInfo .info h2 {
+    font-size: 15px;
+    font-weight: 700;
+}
