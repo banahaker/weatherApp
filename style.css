@@ -97,7 +97,7 @@ body {
     
     .input button {
         display: inline;
-        height: 45px;
+        height: 45px; 
         width: 20%;
         background-color: var(--gray);
         border: none;
