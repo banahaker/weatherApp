@@ -2,12 +2,6 @@ let getCityName = document.getElementById('getCityName');
 let locationBtn = document.getElementById('locationBtn');
 let getCityNameBtn = document.getElementById('getCityNameBtn');
 
-const sendRequest = () => {
-	return new Promise((resolve, reject) => {
-		reject('Error: get user message error, please reload the page');
-	});
-}
-
 async function getWeatherDetail() {
 	let resultHTML = document.getElementById('result');
 	resultHTML.innerHTML = `<h1>waiting info...</h1>`;
