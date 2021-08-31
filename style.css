@@ -18,7 +18,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .setting {
@@ -243,36 +242,14 @@ body {
 }
 
 @media screen and (max-width:750px) {
-    .setting {
-        margin-right: 30px;
-    }
-}
-
-@media screen and (max-width:670px) {
-    .setting {
-        margin-right: 10px;
-    }
-
-    .result {
-        margin-bottom: 10px;
-    }
-}
-
-@media screen and (max-width:650px) {
     body {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0 20px 0;
     }
-    
-    .setting {
-        margin-right: 15px;
-        margin-bottom: 20px;
-    }
-}
 
-@media screen and (max-width:640px) {
     .setting {
-        margin-right: 1px;
+        margin-right: 0;
         margin-bottom: 20px;
     }
 }
