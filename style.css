@@ -68,7 +68,7 @@ body {
     display: none;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width: 1200px) {
     .input {
         width: 70%;
         display: flex;
